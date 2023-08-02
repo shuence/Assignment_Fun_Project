@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Profile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Steve Harrington</h1>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navlinks" id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#contactform">Hire Me</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById("menu");
+                menu.classList.toggle("active");
+            }
+
+        </script>
+
+    </header>
+    <div class="home">
+        <div class="about">
+            <h2>My Profile</h2>
+            <p>My name is steve harrington</p>
+            <h2>About Me</h2>
+            <p>I am a Professional Baby Sitter</p>
+        </div>
+        <div class="image">
+            <img src="https://prann24.netlify.app/Money.jpg" alt="Steve" srcset="">
+            <p>*This is me with my Baby</p>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>Contact Me to Baby Sit Your Baby</h1>
+        <p>My Email:
+            <a href="mailto:steveharrigton@gmail.com">
+                <EMAIL>steveharrigton@gmail.com
+            </a>
+        <p>
+            My Phone Number:
+            <a href="tel:+1(666)9282345">
+                <PHONE NUMBER>+1(666)9282345
+            </a>
+        </p>
+        <ul id="socialmediaicons">
+            <li><a href="https://www.facebook.com/steveharrigton/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/steveharrigton/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/steveharrigton/"><i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="contactform">
+        <h1>Hire me as a baby sitter</h1>
+        <form action="" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" autofocus id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
+            <input name="message" id="message" placeholder="Your Message" required></input>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Created by Steve Harrington's bestfriend
+            <a href="https://dustibun.com">Dustibun</a>
+        </p>
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>

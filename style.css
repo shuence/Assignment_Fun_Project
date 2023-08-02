@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-block: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-inline: 1.5rem;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navlinks {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navlinks li {
+    margin: 0 30px;
+  }
+  
+  .navlinks a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    .navlinks {
+      display: none;
+      flex-direction: column;
+        justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+    }
+  
+    .navlinks li {
+      margin: 15px 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .active {
+      display: flex;
+    }
+  }
+  
+  
+  .home {
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    padding-left: 8rem;
+    padding-top: 2rem;
+    margin-top: 4rem;
+    justify-content: center;
+    padding-block: 1rem;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about {
+    text-align: start;
+  }
+  
+  .image img {
+    width: 70%;
+    height: 90%;
+  }
+  
+  .contact {
+    background-color: #f2f2f2;
+    padding-inline: 20px;
+    padding-block: 5px;
+    margin: 1rem;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .contact a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .contact a:hover {
+    color: #ce9797;
+  }
+  
+  .contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .contact ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .contact ul li a:hover {
+    color: #ce9797;
+  }
+  
+  .contactform {
+    background-color: #f2f2f2;
+    padding-inline: 20px;
+    padding-block: 5px;
+    margin: 1rem;
+    text-align: start;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contactform p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .contactform form {
+    margin-top: 10px;
+    margin: 20px;
+    padding-inline: 20px;
+  }
+  
+  .contactform form label {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: start;
+    display: block;
+  }
+  
+  .contactform form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .contactform button {
+    padding: 10px;
+    background-color: #dc7676;
+    border: 1px solid #ccc;
+  }
+  
+  .footer {
+    background-color: #f2f2f2;
+    padding-inline: 20px;
+    padding-block: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #dc7676;
+  }
+  
+  .footer a:hover {
+    color: #ce9797;
+  }
+    
+  @media screen and (max-width: 768px) {
+    .home {
+    display: flex;
+    flex-direction: row;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    .about {
+      text-align: center;
+      font-size: .8rem;
+    }
+  
+    .image img {
+      display: none;
+    }
+  
+    .contact {
+      margin: 0.5rem;
+      padding-inline: 10px;
+      padding-block: 2px;
+      font-size: .8rem;
+    }
+  
+    .contactform {
+      margin: 0.5rem;
+      padding-inline: 10px;
+      padding-block: 2px;
+      font-size: .8rem;
+    }
+  }
+
+  
